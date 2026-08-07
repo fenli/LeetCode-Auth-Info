@@ -1,6 +1,7 @@
 # LeetCode Auth Info
 
 A simple Chrome Extension for viewing and copying your LeetCode authentication cookies without opening "Chrome Developer Tools" 
+<img width="443" height="451" alt="image" src="https://github.com/user-attachments/assets/dbb90415-a720-4a99-966c-7222b1c202a9" />
 
 ## Features
 
