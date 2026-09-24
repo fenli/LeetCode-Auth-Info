@@ -1,6 +1,8 @@
 # LeetCode Auth Info
 
-A Chrome extension that copies your LeetCode `csrftoken` and `LEETCODE_SESSION` cookies into GitHub Actions secrets on a repository you choose.
+<kbd><img width="448" height="284" alt="image" src="https://github.com/user-attachments/assets/c69b9007-3aa5-46b8-8478-9a2a84f644e1" /></kbd>
+
+A Chrome extension that copies your LeetCode `csrftoken` and `LEETCODE_SESSION` cookies into GitHub Actions secrets on a repository you choose. This extension is intended to be combined with this [leetcode-sync](https://github.com/joshcai/leetcode-sync) to automatically sync your LeetCode solution to github repository.
 
 ## Features
 
