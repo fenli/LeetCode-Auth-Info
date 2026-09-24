@@ -7,12 +7,18 @@ body {
 }
 
 h2 {
-    margin: 0 0 16px;
+    margin: 0 0 8px;
     font-size: 18px;
 }
 
+.subtitle {
+    margin: 0 0 16px;
+    font-size: 13px;
+    color: #555;
+}
+
 .field {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 .label {
@@ -20,37 +26,39 @@ h2 {
     margin-bottom: 6px;
 }
 
-.value-box {
-    background: #f4f4f4;
+input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
     border-radius: 6px;
     padding: 10px;
-    word-break: break-all;
-    font-family: monospace;
-    min-height: 48px;
+    font-size: 13px;
+    font-family: inherit;
 }
 
-.actions {
-    margin-top: 8px;
-    display: flex;
-    gap: 8px;
+input:focus {
+    outline: 2px solid #ffa116;
+    border-color: #ffa116;
 }
 
 button {
     cursor: pointer;
     border: none;
-    padding: 8px 12px;
+    padding: 10px 12px;
     border-radius: 6px;
     background: #ffa116;
     color: white;
     font-weight: bold;
+    width: 100%;
 }
 
-button.secondary {
-    background: #666;
-}
-
-button:hover {
+button:hover:not(:disabled) {
     opacity: .9;
+}
+
+button:disabled {
+    opacity: .6;
+    cursor: default;
 }
 
 .info {
@@ -62,6 +70,23 @@ button:hover {
     font-size: 15px;
 }
 
-.open-btn {
-    width: 100%;
+.status {
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.status.error {
+    color: #b00020;
+}
+
+.status.success {
+    color: #0b7a3b;
+}
+
+.hint {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #777;
 }

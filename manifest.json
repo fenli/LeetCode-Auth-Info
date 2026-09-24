@@ -1,16 +1,17 @@
 {
   "manifest_version": 3,
   "name": "LeetCode Auth Info",
-  "description": "Quickly view and copy your LeetCode authentication cookies.",
-  "version": "1.0.0",
+  "description": "Sync LeetCode authentication cookies into GitHub Actions secrets.",
+  "version": "1.1.0",
 
   "permissions": [
     "cookies",
-    "tabs"
+    "storage"
   ],
 
   "host_permissions": [
-    "https://leetcode.com/*"
+    "https://leetcode.com/*",
+    "https://api.github.com/*"
   ],
 
   "action": {

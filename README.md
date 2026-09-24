@@ -1,17 +1,14 @@
 # LeetCode Auth Info
 
-A simple Chrome Extension for viewing and copying your LeetCode authentication cookies without opening "Chrome Developer Tools".
-
-<img width="443" height="451" alt="image" src="https://github.com/user-attachments/assets/dbb90415-a720-4a99-966c-7222b1c202a9" />
+A Chrome extension that copies your LeetCode `csrftoken` and `LEETCODE_SESSION` cookies into GitHub Actions secrets on a repository you choose.
 
 ## Features
 
-- Display csrftoken
-- Display LEETCODE_SESSION
-- Show / Hide values
-- Copy to clipboard
-- Detect login status
-- Open LeetCode when browsing another site
+- Detect LeetCode login status
+- Cache Repository URL and GitHub Token locally
+- Sync cookies into GitHub Actions secrets:
+    - `LEETCODE_CSRF_TOKEN`
+    - `LEETCODE_SESSION`
 
 ## Installation
 
@@ -19,3 +16,13 @@ A simple Chrome Extension for viewing and copying your LeetCode authentication c
 2. Enable Developer Mode
 3. Click Load unpacked
 4. Select this folder
+
+## Usage
+
+1. Log in to https://leetcode.com
+2. Open the extension
+3. Enter the GitHub repository URL
+4. Enter a GitHub token that can write repository Actions secrets
+5. Click **Sync**
+
+The GitHub token should be a classic PAT with the `repo` scope, or a fine-grained token with **Secrets: Read and write** on that repository.
